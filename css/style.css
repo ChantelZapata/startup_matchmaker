@@ -30,6 +30,8 @@ header {
 	height: 76px;
 	background-color: #000;
 	width: 100%;
+	overflow: hidden;
+	border-bottom: 4px solid #fdf731;
 }
 h1 {
 	font-family: 'Merriweather', 'Times New Roman', serif;
@@ -37,7 +39,7 @@ h1 {
 	color: #fdf731;
 	float: left;
 	margin-left: 40px;
-	padding-bottom: 4px;
+	margin-top: 20px;
 }
 .main-nav {
 	display: inline-block;
@@ -47,27 +49,21 @@ h1 {
 nav {
 	float: right;
 	margin-right: 40px;
-	padding-top: 12px;
+	padding-top: 24px;
 }
-.yellowbar {
-	background-color: #fdf731;
-	height: 4px;
-    bottom: 0; 
-}
-.main-item a:link a:visited a:hover a:active {
+.main-item {
 	font-family: 'Oswald', Arial, sans-serif;
 	font-weight: bold;
 	font-size: 20px;
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 }
 .secondary-item {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	font-size: 20px;
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 }
-
 
 /* Footer */
 footer {
@@ -81,3 +77,46 @@ footer {
 	margin-left: 40px;
 	padding-top: 20px;
 }
+
+
+/* Quote */
+.quote {
+	height: 70px;
+	background-color: #c6c6c6;
+	text-align: center;
+	margin: 0 auto;
+}
+h2 {
+	font-family: 'Merriweather', 'Times New Roman', serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	color: #000;
+	padding-top: 20px;
+}
+.quote-taste {
+	font-family: 'Merriweather', 'Times New Roman', serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(0, 0, 0, 0.3);
+	text-decoration: line-through;
+	padding-top: 20px;
+}
+.quote-are {
+	font-family: 'Merriweather', 'Times New Roman', serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 25px;
+	color: #000;
+	padding-top: 20px;
+	border-bottom: 2px solid #fdf731;
+}
+
+
+/* Main Area */
+.main-image {
+	height: 415px;
+	background-image:;
+}
+
