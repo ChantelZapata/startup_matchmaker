@@ -55,7 +55,8 @@ h1 {
 nav {
 	float: right;
 	margin-right: 40px;
-	padding-top: 24px;
+	margin-top: 24px;
+	margin-bottom:24px;
 }
 .main-item {
 	font-family: 'Oswald', Arial, sans-serif;
@@ -71,6 +72,14 @@ nav {
 	color: #fdf731;
 	text-decoration: none;
 }
+.main-item:active {
+	font-family: 'Oswald', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	background-color: #c6c6c6;
+}
 .secondary-item {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	font-size: 20px;
@@ -80,7 +89,7 @@ nav {
 .secondary-item:hover {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	font-size: 20px;
-	color: #fdf731;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -260,13 +269,54 @@ p {
 /* Developer Page Boxes */
 .dev-boxes {
 	width: 100%;
-	margin: 34px 34px 34px 34px;
 	background-color: #c6c6c6;
 	overflow: hidden;
+	margin: 0 auto;
 }
 .dev-single-box {
-	height: 840px;
-	width: 590px;
+	height: 419px;
+	width: 297px;
 	background-color: #fff;
+	margin-top: 34px;
+	margin-left: 40px;
+	margin-bottom: 34px;
+	overflow: hidden;
+}
+.interior-box {
+	height: 280px;
+	width: 280px;
+	background-color: #c6c6c6;
+	margin-left: 9px;
+	margin-top: 9px;
+}
+.specs {
+	font-family: 'Oswald', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(0, 0, 0, .5);
+	text-decoration: none;
+	text-align: center;
+	padding-top: 130px;
+}
+.some-person {
+	font-family: 'Source Sans Pro', Arial, sans-serif;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 1);
+	line-height: 28px;
+	margin-left: 9px;
+	margin-top: 9px;
+	margin-bottom: 9px;
 }
 
+.contact-button {
+	background-color: #fdf731;
+	padding: 16px 80px 14px 80px;
+	border-radius: 5px;
+  	text-decoration: none;
+  	text-align: center;
+  	margin-left: 40px;
+  	font-family: 'Oswald', Arial, sans-serif;
+  	color: rgba(0, 0, 0, 1);
+  	font-size: 20px;
+  	box-shadow: 0px 4px rgba(204, 202, 44, 1);
+}
