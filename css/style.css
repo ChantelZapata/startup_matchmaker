@@ -256,3 +256,17 @@ p {
 	margin-bottom: 0px;
 	background-color: #c6c6c6;
 }
+
+/* Developer Page Boxes */
+.dev-boxes {
+	width: 100%;
+	margin: 34px 34px 34px 34px;
+	background-color: #c6c6c6;
+	overflow: hidden;
+}
+.dev-single-box {
+	height: 840px;
+	width: 590px;
+	background-color: #fff;
+}
+
