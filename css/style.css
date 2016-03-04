@@ -29,11 +29,12 @@ font-family: 'Merriweather', 'Times New Roman', serif; */
 body {
 	background-color: #fff;
 	margin: 0 auto;
+	width: 100%;
+	font-size: 60px;
 }
 
 /* Header */
 header {
-	height: 76px;
 	background-color: #000;
 	width: 100%;
 	overflow: hidden;
@@ -41,76 +42,100 @@ header {
 }
 h1 {
 	font-family: 'Merriweather', 'Times New Roman', serif;
-	font-size: 30px;
+	font-size: 0.5em;
 	color: #fdf731;
 	float: left;
-	margin-left: 40px;
-	margin-top: 20px;
+	margin: 4%;
 }
+nav {
+	margin-right: 4%;
+	margin-top: 2%;
+	float: right;
+}
+
+.hamburger {
+	display: none;
+}
+
+@media only screen and (max-width:767px){
+	.hamburger {
+	margin-right: 4%;
+	margin-top: 2%;
+	float: right;
+	}
+	.burgerlines {
+	height: 20px;
+	background-color: white;
+	}
+}
+
 .main-nav {
 	display: inline-block;
 	color: #000;
-	margin-left: 20px;
 }
-nav {
-	float: right;
-	margin-right: 40px;
-	margin-top: 24px;
-	margin-bottom:24px;
-}
+
 .main-item {
 	font-family: 'Oswald', Arial, sans-serif;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 0.3em;
 	color: #fff;
 	text-decoration: none;
 }
 .main-item:hover {
 	font-family: 'Oswald', Arial, sans-serif;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 0.3em;
 	color: #fdf731;
 	text-decoration: none;
 }
 .main-item:active {
 	font-family: 'Oswald', Arial, sans-serif;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 0.3em;
 	color: #fff;
 	text-decoration: none;
 	background-color: #c6c6c6;
 }
 .secondary-item {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 0.3em;
 	color: #fff;
 	text-decoration: none;
 }
 .secondary-item:hover {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 0.3em;
 	color: #fff;
 	text-decoration: none;
+}
+
+@media only screen and (max-width:767px){
+	.main-nav {
+	display: none;
+	}
 }
 
 /* Footer */
 footer {
 	background-color: #000;
 	height: 70px;
-    margin-bottom:0px;
-    position: relative;
-  	right: 0;
-  	bottom: 0;
-  	left: 0;
+    margin-bottom: 0;
+	position: initial;
 }
 .footer-text {
 	color: #fff;
 	font-family: 'Source Sans Pro', Arial, sans-serif;
-	font-size: 20px;
-	margin-left: 40px;
-	padding-top: 20px;
+	font-size: 0.3333333333333333em;
+	margin-left: 4%;
+	padding-top: 2%;
 }
 
+/*@media only screen and (max-width:767px){
+	footer {
+		position: initial;
+	}
+}
+*/
 
 /* Quote */
 .quote {
@@ -123,26 +148,26 @@ h2 {
 	font-family: 'Merriweather', 'Times New Roman', serif;
 	font-style: italic;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 0.4166666666666667em;
 	color: #000;
-	padding-top: 20px;
+	padding-top: 2%;
 }
 .quote-taste {
 	font-family: 'Merriweather', 'Times New Roman', serif;
 	font-style: italic;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 1em;
 	color: rgba(0, 0, 0, 0.3);
 	text-decoration: line-through;
-	padding-top: 20px;
+	padding-top: 2%;
 }
 .quote-are {
 	font-family: 'Merriweather', 'Times New Roman', serif;
 	font-style: italic;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 1em;
 	color: #000;
-	padding-top: 20px;
+	padding-top: 2%;
 	border-bottom: 2px solid #fdf731;
 	text-decoration: none;
 }
@@ -150,121 +175,157 @@ h2 {
 
 /* Main Area */
 .main-image {
-	height: 416px;
+	height: 450px;
 	width: 100%;
 	background-image: url(../images/coworking.jpg);
 	background-size: cover;
 	background-position: center;
 }
+
+@media only screen and (min-width:430px) and (max-width:767px) {
+	.main-image {
+		height: 600px;
+	}
+}
+
+@media only screen and (max-width:429px){
+	.main-image {
+		height: 620px;
+	}
+}
+
 .translucent-container {
-	height: 342px;
-	width: 482px;
+	width: 42%;
 	background-color: rgba(255, 255, 255, 0.85);
 	display: inline-block;
 	float: right;
-	margin-top: 37px;
-	margin-right: 40px;
+	margin-top: 4%;
+	margin-right: 4%;
+	padding: 3%;
 	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.65);
 }
+
+@media only screen and (max-width:767px){
+	.translucent-container {
+		width: 50%;
+		padding: 6%;
+	}
+}
+
+
 h3 {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
 	font-weight: bold;
-	font-size: 30px;
+	font-size: 0.5em;
 	color: rgba(0, 0, 0, 1);
-	padding: 60px 40px 20px 40px;
+	padding: 6% 4% 2% 4%;
 }
 .container-para {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 0.3333333333333333em;
 	color: rgba(0, 0, 0, 1);
-	padding: 0px 40px 20px 40px;
+	padding: 0 4% 2% 4%;
 	line-height: 28px;
-	margin-bottom: 20px;
+	margin-bottom: 4%;
 }
 .live-button {
 	background-color: #fdf731;
-	padding: 16px 125px 14px 125px;
+	width: 100%;
+	padding: 4%;
 	border-radius: 5px;
-  	text-decoration: none;
+  	text-decoration: none;s
   	text-align: center;
-  	margin-left: 40px;
   	font-family: 'Oswald', Arial, sans-serif;
   	color: rgba(0, 0, 0, 1);
-  	font-size: 20px;
+  	font-size: 0.3333333333333333em;
   	box-shadow: 0px 4px rgba(204, 202, 44, 1);
+  	border: none;
 }
 
 /* Promo Area */
 .all-promo-touts {
 	width: 100%;
-	height: 314px;
+	height: 300px;
 	padding: 40px 40px 40px 40px;
 	overflow: hidden;
 }
 .promo-tout {
-	width: 30.5%;
-	height: 100%;
-	margin-right: 2%;
+	width: 30%;
 }
+
 .promo-tout-last {
-	width: 30.5%;
-	height: 100%;
+	width: 30%;
 	margin-right: 0px;
 }
+
 .vertical-line {
 	height: 100%;
 	width: 2px;
 	background-color: #c6c6c6;
-	margin-right: 2%;
+	margin-right: 2.15%;
+	margin-left: 2.15%;
 }
+
+@media only screen and (max-width:767px){
+	.all-promo-touts {
+		width: 100%;
+	}
+	.promo-tout {
+		width: 100%;
+	}
+	.promo-tout-last {
+		width: 30%;
+	}
+	.vertical-line {
+		width: 100%;
+		height: 2px;
+		margin: 10% 0;
+	}
+}
+
 h4 {
 	font-family: 'Merriweather', 'Times New Roman', serif;
 	font-weight: bold;
-	font-size: 25px;
+	font-size: 0.4166666666666667em;
 	color: rgba(0, 0, 0, 1);
 	padding-bottom: 5px;
-	padding-top: 20px;
+	padding-top: 2%;
 }
 p {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 0.3333333333333333em;
 	color: rgba(0, 0, 0, 1);
 	line-height: 28px;
-	padding-bottom: 40px;
+	padding-bottom: 4%;
 }
 .gray-button {
 	background-color: #c6c6c6;
-	padding: 16px 100px 14px 100px;
+	width: 100%;
+	padding: 4%;
 	border-radius: 5px;
   	text-decoration: none;
   	text-align: center;
   	font-family: 'Oswald', Arial, sans-serif;
   	color: rgba(0, 0, 0, 1);
-  	font-size: 20px;
-  	box-shadow: 0px 4px rgba(0, 0, 0, .5);
+  	font-size: 0.3333333333333333em;
+  	box-shadow: 0px 4px rgba(180, 180, 180, 1);
+  	border: none;
 }
-.gray-button2 {
-	background-color: #c6c6c6;
-	padding: 16px 71.5px 14px 71.5px;
-	border-radius: 5px;
-  	text-decoration: none;
-  	text-align: center;
-  	font-family: 'Oswald', Arial, sans-serif;
-  	color: rgba(0, 0, 0, 1);
-  	font-size: 20px;
-  	box-shadow: 0px 4px rgba(0, 0, 0, .5);
-}
+
 
 /* Coming Soon */
 .coming-soon {
 	width: 100%;
-	height: 100%;
 	text-align: center;
 	padding-top: 10%;
 	padding-bottom: 10%;
 	margin-bottom: 0px;
 	background-color: #c6c6c6;
 }
+
+
+/*------------------------------------------------
+overflow hidden inital*/
 
 /* Developer Page Boxes */
 .dev-boxes {
@@ -277,9 +338,9 @@ p {
 	height: 419px;
 	width: 297px;
 	background-color: #fff;
-	margin-top: 34px;
-	margin-left: 40px;
-	margin-bottom: 34px;
+	margin-top: 4%;
+	margin-left: 4%;
+	margin-bottom: 4%;
 	overflow: hidden;
 }
 .interior-box {
@@ -292,7 +353,7 @@ p {
 .specs {
 	font-family: 'Oswald', Arial, sans-serif;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 0.3333333333333333em;
 	color: rgba(0, 0, 0, .5);
 	text-decoration: none;
 	text-align: center;
@@ -300,7 +361,7 @@ p {
 }
 .some-person {
 	font-family: 'Source Sans Pro', Arial, sans-serif;
-	font-size: 20px;
+	font-size: 0.3333333333333333em;
 	color: rgba(0, 0, 0, 1);
 	line-height: 28px;
 	margin-left: 9px;
@@ -317,6 +378,6 @@ p {
   	margin-left: 40px;
   	font-family: 'Oswald', Arial, sans-serif;
   	color: rgba(0, 0, 0, 1);
-  	font-size: 20px;
+  	font-size: 0.3333333333333333em;
   	box-shadow: 0px 4px rgba(204, 202, 44, 1);
 }
